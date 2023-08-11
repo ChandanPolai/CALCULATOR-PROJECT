@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>IPHONE-CALCULATOR</title>
+</head>
+<body>
+    <h2>created by <span>chandan & hitesh</span></h2>
+    <div class="calculator">
+        <div class="calc-1">
+            <input type="text" id="box" placeholder="0">
+        </div>
+        <div class="calc-2">
+            <div class="btn-container">
+                <button style="background:#d4d4d2; color: black;"  onclick="clearbox()">AC</button>
+                <button style="background:#d4d4d2; color: black;" onclick="clearOne()">+/-</button>
+                <button style="background:#d4d4d2; color: black;" onclick="addNum('%')">%</button>
+                <button style="background: #ff9500;" onclick="addNum('/')">/</button>
+            </div>
+                
+            <div class="btn-container">
+                <button id="b7" value="7" onclick="addNum(7)">7</button>
+                <button id="b8" value="8" onclick="addNum(8)">8</button>
+                <button id="b9" value="9" onclick="addNum(9)">9</button>
+                <button style="background: #ff9500;" onclick="addNum('x')">x</button>
+            </div>
+
+            <div class="btn-container">
+                <button id="b4" value="4" onclick="addNum(4)">4</button>
+                <button id="b5" value="5" onclick="addNum(5)">5</button>
+                <button id="b6" value="6" onclick="addNum(6)">6</button>
+                <button style="background: #ff9500;" onclick="addNum('-')">-</button>
+            </div>
+
+            <div class="btn-container">
+                <button id="b1" value="1" onclick="addNum(1)">1</button>
+                <button id="b2" value="2" onclick="addNum(2)">2</button>
+                <button id="b3" value="3" onclick="addNum(3)">3</button>
+                <button style="background: #ff9500;" onclick="addNum('+')">+</button>
+            </div>
+
+            <div class="btn-container">
+                <button id="btn-0" id="b0" value="0" onclick="addNum(0)">0</button>
+                <button id="b" value="." onclick="addNum('.')">.</button>
+                <button style="background: #ff9500; margin-left: 12px;" onclick="addNum('=')">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>IPHONE-CALCULATOR</title>
+</head>
+<body>
+    <h1><span></span></h1>
+    our calculator start
+    <div class="calculator">
+        <div class="calc-1">
+            <input type="text" placeholder="0">
+        </div>
+        <div class="calc-2">
+            <div class="btn-container">
+                <button style="background:#d4d4d2; color: black;">AC</button>
+                <button style="background:#d4d4d2; color: black;">+/-</button>
+                <button style="background:#d4d4d2; color: black;">%</button>
+                <button style="background: #ff9500;">/</button>
+            </div>
+                
+            <div class="btn-container">
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button style="background: #ff9500;">x</button>
+            </div>
+
+            <div class="btn-container">
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button style="background: #ff9500;">-</button>
+            </div>
+
+            <div class="btn-container">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button style="background: #ff9500;">+</button>
+            </div>
+
+            <div class="btn-container">
+                <button id="btn-0">0</button>
+                <button>.</button>
+                <button style="background: #ff9500; margin-left: 12px;">=</button>
+            </div>
+        </div>
+    </div>
+        our calculator end
+
+</body>
+</html> -->

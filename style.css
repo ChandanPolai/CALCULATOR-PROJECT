@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+:root{
+    --btn-col:#505050;
+    --calc-bg:#1c1c1c;
+    --btn-txt:#fff;
+    --opreation-col:#ff9500;
+    --cancel-btn:#d4d4d2;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("https://thesocialmediamonthly.com/wp-content/uploads/2017/02/apple-wallpaper.jpg");
+    background-position: center;
+}
+
+h2{
+    position: absolute;
+    top: 0;
+    padding-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+span{
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:35px;
+    display: inline-block;
+}
+
+.calculator{
+    height: 450px;
+    width: 280px;
+    background:var(--calc-bg);
+    animation: iphone 0.2s  forwards ease-out;
+}
+
+.calculator .calc-1{
+    height: 30%;
+    width: 100%;
+    background: var(--cancel-btn);
+}
+
+input{
+    height: 100%;
+    width: 100%;
+    text-align: right;
+    font-size: 50px;
+    padding-right: 10px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: var(--calc-bg);
+}
+
+.calculator .calc-2{
+    height: 70%;
+    width: 100%;
+    background: var(--calc-bg);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.calc-2 .btn-container{
+    height:50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-container button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    font-size: 28px;
+    color: #fff;
+    background: var(--btn-col);
+    cursor: pointer;
+    transition: all 0.3s linear ease;
+}
+
+.main-btn{
+    background: var(--cancel-btn);
+    color:black;
+}
+
+#btn-0{
+    width: 90px;
+    border-radius: 20px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+button:focus{
+    outline: 2px solid #ff9500;
+    outline-offset: 2px;
+    background:#313030;
+}
+
+@keyframes iphone{
+    0%{
+        display: none;
+        transform: translatey(-130%);
+    }
+
+    100%{
+        display: block;
+        transform: translatey(0%);
+    }
+}
+
